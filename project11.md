@@ -207,7 +207,7 @@ Update the ansible playbook with some new Ansible tasks:
 Create a new branch
 `git branch new-ansibleTasks` and switch to the new branch `git checkout new-ansibleTasks`
 
-![Alt text](../../../../../../C:/Users/papar/OneDrive/Desktop/ANSIBLE-CONFIGURATION-MANAGEMENT-AUTOMATE-PROJECT-7-TO-10/images/35.PNG)
+![Alt text](images/35.PNG)
 
 Update the playbook by: 
 - Create a new directory and a file inside it.
@@ -228,7 +228,7 @@ Update the playbook by:
   timezone:
      name: Asia/Tokyo
 ```
-![Alt text](../../../../../../C:/Users/papar/OneDrive/Desktop/ANSIBLE-CONFIGURATION-MANAGEMENT-AUTOMATE-PROJECT-7-TO-10/images/36.PNG)
+![Alt text](images/36.PNG)
 
 The changes will be pushed to github by running:
 ```
@@ -236,25 +236,25 @@ git add --all
 git commit -m "new ansible tasks"
 git push new-ansibleTasks
 ```
-![Alt text](../../../../../../C:/Users/papar/OneDrive/Desktop/ANSIBLE-CONFIGURATION-MANAGEMENT-AUTOMATE-PROJECT-7-TO-10/images/37.PNG)
+![Alt text](images/37.PNG)
 
 Pull request and merge changes
-![Alt text](../../../../../../C:/Users/papar/OneDrive/Desktop/ANSIBLE-CONFIGURATION-MANAGEMENT-AUTOMATE-PROJECT-7-TO-10/images/38.PNG)
+![Alt text](images/38.PNG)
 
 Check the new build in Jenkins
-![Alt text](../../../../../../C:/Users/papar/OneDrive/Desktop/ANSIBLE-CONFIGURATION-MANAGEMENT-AUTOMATE-PROJECT-7-TO-10/images/39.PNG)
+![Alt text](images/39.PNG)
 
 Run the Ansible Playbook - change to the build artifacts directory
 ```
 cd /var/lib/jenkins/jobs/Ansible/builds/19/archive
 ansible-playbook -i inventory/dev.yml playbooks/common.yml
 ```
-![Alt text](../../../../../../C:/Users/papar/OneDrive/Desktop/ANSIBLE-CONFIGURATION-MANAGEMENT-AUTOMATE-PROJECT-7-TO-10/images/40.PNG)
+![Alt text](images/40.PNG)
 
 
-![Alt text](../../../../../../C:/Users/papar/OneDrive/Desktop/ANSIBLE-CONFIGURATION-MANAGEMENT-AUTOMATE-PROJECT-7-TO-10/images/41.PNG)
+![Alt text](images/41.PNG)
 
-![Alt text](../../../../../../C:/Users/papar/OneDrive/Desktop/ANSIBLE-CONFIGURATION-MANAGEMENT-AUTOMATE-PROJECT-7-TO-10/images/42.PNG)
+![Alt text](images/42.PNG)
 
 
 
